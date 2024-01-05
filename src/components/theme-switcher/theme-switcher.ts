@@ -107,7 +107,7 @@ export class ThemeSwitcher extends LitElement {
 			_heroImage.src = '/assets/images/home/classic-hero.jpg';
 		}
 		if (theme === 'dark') {
-			_heroImage.src = '/assets/images/home/dark-hero.jpg';
+			_heroImage.src = '/assets/images/home/dark-hero.webp';
 		}
 		if (theme === 'earth') {
 			_heroImage.src = '/assets/images/home/earth-hero.jpg';

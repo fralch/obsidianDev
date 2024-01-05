@@ -3,21 +3,65 @@ import { Container, FeatureCard } from '@littlesticks/odyssey-theme-components';
 
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import { ThreeColumnTextSection,Button, CustomerQuoteSection} from '@littlesticks/odyssey-theme-components';
 ---
 
 <Layout>
 	<HomeHeroSection />
+	<CustomerQuoteSection
+		quoteText="Creamos soluciones tecnológicas con impacto que empoderan a nuestros clientes para transformar sus negocios y crear un futuro mejor."
+		customerName="WankaDev"
+	/>
+	<ThreeColumnTextSection>
+		<div slot="column-1-body">
+			<h2>Por qué nosotros?</h2>
+			<p>
+				Nuestro equipo altamente calificado se destaca en la implementación de las últimas tecnologías y enfoques innovadores. 
+				Nuestro compromiso con la satisfacción del cliente va más allá de la entrega del producto, 
+				ya que valoramos la transparencia, la colaboración abierta.
+			</p>
+		</div>
+		<Button slot="column-1-cta">Learn More</Button>
+		<div slot="column-2-body">
+			<h2>Como lo hacemos?</h2>
+			<p>
+				Comenzamos con una comprensión profunda de las necesidades del cliente. 
+				Involucrando al cliente en cada paso del proceso para garantizar resultados precisos. 
+				Nos enorgullece ofrecer soluciones que reflejan la visión única de cada cliente.
+			</p>
+		</div>
+		<Button slot="column-2-cta" outlined>Learn More</Button>
+		<div slot="column-3-body">
+			<h2>Qué puedes esperar?</h2>
+			<p>
+				Nuestras soluciones impulsan el crecimiento de tu negocio y te brindan una presencia en línea robusta, 
+				eficiencia operativa y una ventaja competitiva. Espera no solo un producto excepcional, sino también un impacto positivo en tu éxito empresarial .
+			</p>
+		</div>
+		<Button slot="column-3-cta">Learn More</Button>
+	</ThreeColumnTextSection>
 	<Container>
 		<section class="feature-card__section">
-			<h2>Landing Pages</h2>
+			<h2>Portafolio</h2>
 			<p>
-				Use one of our landing pages to jumpstart your website or
-				ad campaign.
+				Empresas que confían en nosotros.
 			</p>
 			<div class="feature-card__grid">
-				<FeatureCard href="/landing-pages/landing-1" title="Landing Page 1" imgSrc="/assets/images/home/screenshots/landing-1">
+				<FeatureCard href="https://credipyme.com.pe/" title="Credipyme" imgSrc="/assets/images/home/screenshots/landing-1">
 				</FeatureCard>
-				<FeatureCard href="/landing-pages/landing-2" title="Landing Page 2" imgSrc="/assets/images/home/screenshots/landing-2">
+				<FeatureCard href="https://www.cajacentro.com.pe/" title="CajaCentro" imgSrc="/assets/images/home/screenshots/landing-2">
+				</FeatureCard>
+				<FeatureCard href="https://www.zgroup.com.pe/" title="Zgroup" imgSrc="/assets/images/home/screenshots/zgroup">
+				</FeatureCard>
+				<FeatureCard href="https://www.tecsup.edu.pe/" title="Zgroup" imgSrc="/assets/images/home/screenshots/tecsup">
+				</FeatureCard>
+				<FeatureCard href="https://www.tecsup.edu.pe/" title="Zgroup" imgSrc="/assets/images/home/screenshots/tecsup">
+				</FeatureCard>
+				<FeatureCard href="https://www.tecsup.edu.pe/" title="Zgroup" imgSrc="/assets/images/home/screenshots/tecsup">
+				</FeatureCard>
+				<FeatureCard href="https://www.tecsup.edu.pe/" title="Zgroup" imgSrc="/assets/images/home/screenshots/tecsup">
+				</FeatureCard>
+				<FeatureCard href="https://www.tecsup.edu.pe/" title="Zgroup" imgSrc="/assets/images/home/screenshots/tecsup">
 				</FeatureCard>
 			</div>
 		</section>
